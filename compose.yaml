@@ -1,0 +1,11 @@
+services:
+  shipnow:
+    build:
+      context: .
+    environment:
+      - APP_ENV=prod
+    restart: unless-stopped
+    command: --bind 0.0.0.0:4001
+  redis:
+    image: redis:latest
+    restart: unless-stopped

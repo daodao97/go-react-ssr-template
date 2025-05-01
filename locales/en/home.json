@@ -1,0 +1,154 @@
+{
+    "title": "首页",
+    "description": "Go-React-SSR 是一个使用 Go、V8Go 和 React 实现的高性能服务端渲染框架，提供卓越的 SEO 友好性和极致性能体验。",
+    "head": {
+        "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
+        "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
+        "keywords": "Go, React, SSR, 服务端渲染, V8Go, SEO优化, 高性能框架, Web开发, 前端框架, MCP服务器, 多项目联合, 多语言支持, 配置化渲染",
+        "author": "daodao97!",
+        "og": {
+            "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
+            "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
+            "url": "https://github.com/daodao97/Go-React-SSR",
+            "image": "/images/og-image.jpg"
+        },
+        "twitter": {
+            "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
+            "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
+            "image": "/images/twitter-image.jpg",
+            "card": "summary_large_image",
+            "site": "@daodao97__"
+        }
+    },
+    "hero": {
+        "title": "Go-React-SSR - 现代服务端渲染解决方案",
+        "description": "Go-React-SSR 是一个结合 Go、V8Go 和 React 技术栈的高性能服务端渲染框架。它提供卓越的 SEO 友好性，同时保持极致的性能体验，支持 MCP 服务转换、多项目联合功能和完全配置化站点渲染，帮助开发者快速构建现代 Web 应用。",
+        "buttons": [
+            {
+                "text": "开始使用",
+                "url": "/docs/getting-started",
+                "overwirteClassName": "bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg font-medium"
+            }
+        ]
+    },
+    "features": [
+        {
+            "title": "强大的服务端渲染框架",
+            "description": "Go-React-SSR 提供现代化的服务端渲染体验，满足您的高性能 Web 开发需求。",
+            "features": [
+                {
+                    "title": "Go 与 React 完美结合",
+                    "description": "利用 Go 的高性能后端和 React 的灵活前端，打造无缝的开发体验。"
+                },
+                {
+                    "title": "卓越的 SEO 支持",
+                    "description": "服务端渲染确保搜索引擎能够完美抓取您的内容，提升网站可见性。"
+                },
+                {
+                    "title": "极致性能优化",
+                    "description": "基于 V8Go 的高效 JavaScript 执行，显著提升渲染速度和用户体验。"
+                },
+                {
+                    "title": "完全配置化渲染",
+                    "description": "只需修改配置文件即可快速上线站点，无需深入编码，大幅提升开发效率。"
+                },
+                {
+                    "title": "MCP 服务器转换",
+                    "description": "便捷地将网站功能转换为 MCP 服务器，支持更高级的客户端交互和功能扩展。"
+                },
+                {
+                    "title": "多项目联合功能",
+                    "description": "内置多项目间的登录、付费等基础功能，实现多应用资源共享和用户体验统一。"
+                },
+                {
+                    "title": "完善的多语言支持",
+                    "description": "强大的国际化解决方案，支持多语言内容管理、动态语言切换和本地化适配。"
+                },
+                {
+                    "title": "开发体验友好",
+                    "description": "简洁的 API 设计和完整的开发工具链，让您的开发过程更加顺畅。"
+                },
+                {
+                    "title": "灵活的数据获取",
+                    "description": "支持服务端数据预取，减少客户端请求，提供更快的首屏加载体验。"
+                },
+                {
+                    "title": "生态系统友好",
+                    "description": "无缝集成现有的 React 生态系统，支持主流库和工具。"
+                }
+            ]
+        }
+    ],
+    "faq": {
+        "title": "常见问题",
+        "subtitle": "了解关于 Go-React-SSR 框架的一切",
+        "list": [
+            {
+                "question": "Go-React-SSR 相比其他 SSR 框架有什么优势？",
+                "answer": "Go-React-SSR 结合了 Go 的高性能和 React 的灵活性，通过 V8Go 提供卓越的 JavaScript 执行效率。相比纯 JavaScript 的 SSR 框架，它提供更快的渲染速度、更低的内存占用和更高的并发处理能力，特别适合高流量网站和性能敏感的应用场景。此外，框架独特的 MCP 服务器转换能力、多项目联合功能和完全配置化的站点渲染，使其在构建大型、复杂应用生态时具有显著优势。"
+            },
+            {
+                "question": "什么是完全配置化的站点渲染？",
+                "answer": "Go-React-SSR 的完全配置化站点渲染是一项创新功能，它允许开发者仅通过编辑配置文件就能快速构建和部署完整的网站。您可以通过配置定义页面布局、组件结构、数据源和路由规则等，无需编写大量代码。这极大地简化了开发流程，缩短了从构思到上线的时间，特别适合快速原型开发和内容驱动的网站。"
+            },
+            {
+                "question": "什么是 MCP 服务器转换功能？",
+                "answer": "MCP 服务器转换是 Go-React-SSR 的独特功能，它允许开发者将普通网站功能便捷地转换为 MCP (Multi-Channel Platform) 服务器。这意味着您可以轻松地将 Web 应用扩展为支持多渠道通信的强大服务，实现与桌面客户端、移动应用等多种终端的无缝交互，大大提升用户体验和功能扩展性。"
+            },
+            {
+                "question": "多项目联合功能如何工作？",
+                "answer": "Go-React-SSR 的多项目联合功能为构建大型应用生态提供了基础设施。它内置了跨项目的用户认证、权限管理和支付系统等共享功能，使得不同项目间可以共享用户数据、认证状态和支付信息。这不仅提升了开发效率，还为用户提供了一致的体验，用户可以使用单一登录凭证访问生态内的所有应用和服务。"
+            },
+            {
+                "question": "Go-React-SSR 的多语言支持有什么特点？",
+                "answer": "Go-React-SSR 提供了完善的国际化解决方案，包括基于 JSON 的语言文件管理、服务端渲染时的语言检测与应用、客户端动态语言切换等功能。框架支持复杂的多语言内容管理，包括文本翻译、日期时间格式本地化、数字格式化等。这使得开发者能够轻松构建面向全球用户的多语言应用，提供本地化的用户体验。"
+            },
+            {
+                "question": "我需要同时了解 Go 和 React 才能使用这个框架吗？",
+                "answer": "虽然同时了解两者会带来最佳体验，但您不必精通两种技术。前端开发者可以专注于 React 组件开发，后端开发者可以关注 Go 服务实现。我们提供了清晰的接口和丰富的文档，帮助开发者快速上手，无论您的背景如何。"
+            },
+            {
+                "question": "Go-React-SSR 的性能表现如何？",
+                "answer": "Go-React-SSR 在性能测试中表现卓越。得益于 Go 的高效并发处理和 V8Go 的优化 JavaScript 执行，它能够处理高并发请求，同时保持低延迟。在实际项目中，与传统 Node.js 的 SSR 解决方案相比，我们观察到了显著的性能提升和资源占用减少。"
+            },
+            {
+                "question": "如何将 Go-React-SSR 集成到现有项目中？",
+                "answer": "Go-React-SSR 设计了灵活的集成路径。对于现有的 React 项目，您可以逐步迁移到 SSR；对于 Go 项目，我们提供了简单的中间件集成方案。详细的迁移和集成指南可以在我们的文档中找到，帮助您平滑过渡到 Go-React-SSR 框架。"
+            },
+            {
+                "question": "Go-React-SSR 是否支持热重载和开发时的快速迭代？",
+                "answer": "是的，Go-React-SSR 提供了完整的开发工具链，包括热重载、快速构建和开发时调试支持。我们理解开发体验的重要性，因此投入了大量精力确保开发过程高效顺畅，同时保持生产环境的高性能特性。"
+            }
+        ]
+    },
+    "footer": {
+        "social": [
+            {
+                "icon": "github",
+                "url": "https://github.com/daodao97"
+            },
+            {
+                "icon": "twitter",
+                "url": "https://x.com/daodao97__"
+            }
+        ],
+        "links": [
+            {
+                "Text": "文档",
+                "URL": "/docs"
+            },
+            {
+                "Text": "示例",
+                "URL": "/examples"
+            },
+            {
+                "Text": "常见问题",
+                "URL": "#faq"
+            },
+            {
+                "Text": "GitHub",
+                "URL": "https://github.com/daodao97/Go-React-SSR"
+            }
+        ]
+    }
+}

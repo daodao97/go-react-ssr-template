@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./*"
+            ],
+            "#/core/*": [
+                "../core/ui/*"
+            ]
+        },
+        "jsx": "react",
+        "lib": [
+            "DOM",
+            "ES2015",
+            "ES2016",
+            "ES2017"
+        ]
+    }
+}

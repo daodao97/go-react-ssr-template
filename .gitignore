@@ -1,0 +1,7 @@
+.DS_Store
+node_modules
+tmp
+frontend/app
+frontend/server
+/build/
+conf.yaml

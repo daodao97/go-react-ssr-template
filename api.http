@@ -1,0 +1,19 @@
+## callback
+
+POST http://localhost:8080/paid_callback/965D8B3E-822A-ACEF-9AC2-BE2307318742
+Content-Type: application/json
+
+{
+	"id": 123,
+	"mode": "payment",
+	"app_id": "wanx.space",
+	"user_id": "4",
+	"user_email": "test@test.com",
+	"user_name": "test",
+	"payment_intent_id": "pi_123",
+	"order_id": "order_123",
+	"product_description": "test",
+	"price_id": "price_123",
+	"unit_amount": 100,
+	"amount": 100
+}

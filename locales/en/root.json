@@ -1,0 +1,36 @@
+{
+    "lang": "🇬🇧 English",
+    "title": "Go-React-SSR",
+    "nav": {
+        "home": "首页",
+        "about": "关于",
+        "docs": "文档",
+        "examples": "示例"
+    },
+    "header": {
+        "title": "Go-React-SSR",
+        "nav": [
+            {
+                "text": "文档",
+                "url": "/docs"
+            },
+            {
+                "text": "示例",
+                "url": "/examples"
+            },
+            {
+                "text": "GitHub",
+                "url": "https://github.com/daodao97/Go-React-SSR"
+            }
+        ]
+    },
+    "login_button": "登录",
+    "logout_button": "退出",
+    "footer": {
+        "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
+        "desc": "Go-React-SSR 是一个使用 Go、V8Go 和 React 实现的高性能服务端渲染框架，提供卓越的 SEO 友好性和极致性能体验，支持 MCP 服务转换、多项目联合功能和完全配置化站点渲染。",
+        "privacy": "隐私政策",
+        "terms": "服务条款",
+        "copyright": "© 2024 • Go-React-SSR • 保留所有权利"
+    }
+}
