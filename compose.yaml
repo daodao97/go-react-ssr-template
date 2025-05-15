@@ -2,7 +2,7 @@ services:
   shipnow:
     build:
       context: .
-      dockerfile: new.Dockerfile
+      dockerfile: Dockerfile
     environment:
       - APP_ENV=prod
       - REDIS_0_ADDR=redis:6379
