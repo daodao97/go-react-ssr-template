@@ -11,6 +11,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 
 COPY . .
+COPY --from=node-builder /app/frontend /app/frontend
 COPY --from=node-builder /app/node_modules /app/node_modules
 RUN go mod download
 RUN go run ./cmd/build/...
