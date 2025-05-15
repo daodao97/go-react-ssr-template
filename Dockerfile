@@ -11,7 +11,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 
 COPY . .
+COPY --from=node-builder /app/node_modules /app/node_modules
 RUN go mod download
+RUN go run ./cmd/build/...
 
 # 获取 Git 信息并静态编译
 RUN GIT_TAG=$(git describe --tags --always) \
@@ -26,7 +28,7 @@ WORKDIR /app
 RUN apk add --no-cache ca-certificates tzdata
 
 COPY --from=builder /app/myapp .
-COPY --from=node-builder /app/build /app/build
+COPY --from=builder /app/build /app/build
 COPY *.yaml /app/
 COPY locales /app/locales
 
