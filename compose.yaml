@@ -2,10 +2,14 @@ services:
   shipnow:
     build:
       context: .
+      dockerfile: new.Dockerfile
     environment:
       - APP_ENV=prod
+      - REDIS_0_ADDR=redis:6379
     restart: unless-stopped
-    command: --bind 0.0.0.0:4001
+    ports:
+      - "8080:8080"
+    command: --bind 0.0.0.0:8080
   redis:
     image: redis:latest
     restart: unless-stopped
