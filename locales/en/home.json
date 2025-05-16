@@ -9,11 +9,11 @@
         "meta": [
             {
                 "name": "og:logo",
-                "content": "/assets/logo.png"
+                "content": "https://gossr.daodao.run/assets/logo.png"
             },
             {
                 "name": "og:url",
-                "content": "https://julang.app/"
+                "content": "https://gossr.daodao.run/"
             },
             {
                 "name": "og:type",
