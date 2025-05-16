@@ -6,7 +6,12 @@
         "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
         "keywords": "Go, React, SSR, 服务端渲染, V8Go, SEO优化, 高性能框架, Web开发, 前端框架, MCP服务器, 多项目联合, 多语言支持, 配置化渲染",
         "author": "daodao97!",
-        "canonical": "https://gossr.daodao.run/",
+        "link": [
+            {
+                "rel": "canonical",
+                "href": "https://gossr.daodao.run/"
+            }
+        ],
         "meta": [
             {
                 "name": "og:logo",
