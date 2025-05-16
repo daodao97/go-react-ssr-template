@@ -42,4 +42,8 @@ func LoadApp(r *gin.Engine) {
 		})
 		c.XML(http.StatusOK, sm.Build()[0])
 	})
+
+	r.NoRoute(func(c *gin.Context) {
+		c.HTML(http.StatusNotFound, "index.html:NotFound.js", nil)
+	})
 }

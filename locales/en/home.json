@@ -9,7 +9,7 @@
         "og": {
             "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
             "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
-            "url": "https://github.com/daodao97/Go-React-SSR",
+            "url": "https://github.com/daodao97/go-react-ssr-template",
             "image": "/images/og-image.jpg"
         },
         "twitter": {
@@ -147,7 +147,7 @@
             },
             {
                 "Text": "GitHub",
-                "URL": "https://github.com/daodao97/Go-React-SSR"
+                "URL": "https://github.com/daodao97/go-react-ssr-template"
             }
         ]
     }

@@ -1,9 +1,9 @@
 {
-    "title": "Privacy Policy",
+    "title": "Terms of Service",
     "contents": [
         {
             "title": "1. 总则",
-            "description": "本隐私政策适用于所有使用Go-React-SSR服务的用户，包括但不限于通过网站、API、SDK等方式访问和使用Go-React-SSR服务的用户。"
+            "description": "本服务条款适用于所有使用Go-React-SSR服务的用户，包括但不限于通过网站、API、SDK等方式访问和使用Go-React-SSR服务的用户。"
         },
         {
             "title": "2. 信息收集",

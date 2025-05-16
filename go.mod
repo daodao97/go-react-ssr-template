@@ -26,7 +26,7 @@ require (
 	github.com/cloudflare/tableflip v1.2.3 // indirect
 	github.com/cloudwego/base64x v0.1.5 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
-	github.com/evanw/esbuild v0.25.2 // indirect
+	github.com/evanw/esbuild v0.25.4 // indirect
 	github.com/fatih/color v1.17.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.8 // indirect

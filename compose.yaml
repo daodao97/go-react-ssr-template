@@ -5,6 +5,8 @@ services:
     environment:
       - APP_ENV=prod
     restart: unless-stopped
+    ports:
+      - 4001:4001
     command: --bind 0.0.0.0:4001
   redis:
     image: redis:latest
