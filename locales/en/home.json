@@ -6,19 +6,52 @@
         "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
         "keywords": "Go, React, SSR, 服务端渲染, V8Go, SEO优化, 高性能框架, Web开发, 前端框架, MCP服务器, 多项目联合, 多语言支持, 配置化渲染",
         "author": "daodao97!",
-        "og": {
-            "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
-            "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
-            "url": "https://github.com/daodao97/go-react-ssr-template",
-            "image": "/images/og-image.jpg"
-        },
-        "twitter": {
-            "title": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架",
-            "description": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。",
-            "image": "/images/twitter-image.jpg",
-            "card": "summary_large_image",
-            "site": "@daodao97__"
-        }
+        "meta": [
+            {
+                "name": "og:url",
+                "content": "https://julang.app/"
+            },
+            {
+                "name": "og:type",
+                "content": "website"
+            },
+            {
+                "name": "og:title",
+                "content": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架"
+            },
+            {
+                "name": "og:description",
+                "content": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。"
+            },
+            {
+                "name": "og:image",
+                "content": "https://screenshot.domains/gossr.daodao.run"
+            },
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image"
+            },
+            {
+                "name": "twitter:domain",
+                "content": "gossr.daodao.run"
+            },
+            {
+                "name": "twitter:url",
+                "content": "https://gossr.daodao.run/"
+            },
+            {
+                "name": "twitter:title",
+                "content": "Go-React-SSR - 高性能 Go 与 React 服务端渲染框架"
+            },
+            {
+                "name": "twitter:description",
+                "content": "基于 Go、V8Go 和 React 构建的现代 SSR 框架，兼顾 SEO 友好性与卓越性能，加速您的 Web 应用开发。"
+            },
+            {
+                "name": "twitter:image",
+                "content": "https://screenshot.domains/gossr.daodao.run"
+            }
+        ]
     },
     "hero": {
         "title": "Go-React-SSR - 现代服务端渲染解决方案",
