@@ -8,6 +8,10 @@
         "author": "daodao97!",
         "meta": [
             {
+                "name": "og:logo",
+                "content": "/assets/logo.png"
+            },
+            {
                 "name": "og:url",
                 "content": "https://julang.app/"
             },
