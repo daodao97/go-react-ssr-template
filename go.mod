@@ -3,7 +3,7 @@ module shipnow
 go 1.24.0
 
 require (
-	github.com/daodao97/goreact v0.0.0-00010101000000-000000000000
+	github.com/daodao97/goreact v0.0.0-20250519131205-2910c6dd1eaa
 	github.com/daodao97/xgo v0.0.0-20250416024806-6ca66c31dfd6
 	github.com/gin-contrib/gzip v1.2.2
 	github.com/gin-gonic/gin v1.10.0
@@ -11,9 +11,9 @@ require (
 	github.com/kataras/sitemap v0.0.6
 )
 
-replace github.com/daodao97/goreact => ./core
-
 replace github.com/mark3labs/mcp-go => github.com/daodao97/mcp-go v0.0.0-20250412074743-f7045e3e6aaf
+
+// replace github.com/daodao97/goreact => /Users/daodao/work/github/goreact
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect

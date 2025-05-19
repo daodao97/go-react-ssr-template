@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Button, Flex } from "@radix-ui/themes";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { getTranslations } from "#/core/lib/i18n";
+import { getTranslations } from "#/lib/i18n";
 
 interface Content {
     title: string

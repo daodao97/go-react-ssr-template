@@ -4,10 +4,10 @@ tmp_dir = "tmp"
 
 [build]
 args_bin = []
-bin = "./tmp/main --bind 0.0.0.0:8080"
+bin = "./tmp/main --bind 0.0.0.0:8080 --app-env dev"
 cmd = "go build -o ./tmp/main ."
 delay = 1000
-exclude_dir = ["assets", "tmp", "vendor", "testdata", "build", "node_modules", "frontend/app", "frontend/server"]
+exclude_dir = ["assets", "tmp", "vendor", "testdata", "build", "node_modules", "frontend", "frontend1"]
 exclude_file = []
 exclude_regex = ["_test.go"]
 exclude_unchanged = false
@@ -21,7 +21,7 @@ log = "build-errors.log"
 poll = false
 poll_interval = 0
 post_cmd = []
-pre_cmd = ["rm -rf build", "go run ./cmd/build/..."]
+pre_cmd = []
 rerun = false
 rerun_delay = 500
 send_interrupt = false
