@@ -1,34 +1,26 @@
-FROM node:24 AS builder
+FROM golang:1.24 AS builder
 WORKDIR /app
 
-# 安装 git 和 golang
-RUN apt-get update && apt-get install -y git curl
-RUN apt-get install -y golang-go
+RUN apt-get update && apt-get install -y git
 
-# 确认 Go 安装成功
-RUN go version
-
-# 设置 GOPATH
-ENV GOPATH=/go
-ENV PATH=$PATH:$GOPATH/bin
-
-COPY package.json .
-COPY package-lock.json .
-RUN npm i
-
-# 先复制不常变动的配置文件
-COPY go.mod go.sum ./ 
+COPY go.mod go.sum ./
 RUN go mod download
 
-# 确认 Node.js 和 npm 可用
-RUN node --version && npm --version
 COPY . .
-RUN go run ./cmd/build/...
-
-# 获取 Git 信息并构建
 RUN GIT_TAG=$(git describe --tags --always) \
     && echo "GIT_TAG=${GIT_TAG}" \
     && go build -ldflags="-s -w -X shipnow/conf.GitTag=${GIT_TAG}" -o myapp
+
+RUN go install github.com/daodao97/goreact/cmd/goreact
+
+FROM node:latest AS node-builder
+WORKDIR /app
+COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
+COPY package.json .
+RUN cp package-lock.json
+RUN npm i
+RUN goreact
+
 # 运行时阶段
 FROM alpine:latest
 WORKDIR /app
