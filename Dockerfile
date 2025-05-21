@@ -1,10 +1,3 @@
-FROM node:latest AS node-builder
-WORKDIR /app
-COPY package.json .
-COPY package-lock.json .
-RUN npm i
-
-# 构建阶段 - 包含 Go 和 Node 环境
 FROM golang:1.24 AS builder
 WORKDIR /app
 
@@ -13,10 +6,9 @@ RUN apt-get update && apt-get install -y git curl
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get install -y nodejs
 
-# 复制 Node.js 部分
-COPY --from=node-builder /app/node_modules /app/node_modules
-COPY --from=node-builder /app/package.json /app/package.json
-COPY --from=node-builder /app/package-lock.json /app/package-lock.json
+COPY package.json .
+COPY package-lock.json .
+RUN npm i
 
 # 先复制不常变动的配置文件
 COPY go.mod go.sum ./ 
