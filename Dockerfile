@@ -1,7 +1,7 @@
 FROM --platform=linux/arm64 node:latest AS node-builder
 WORKDIR /app
 COPY package.json .
-RUN if [ -f "package-lock.json" ]; then cp package-lock.json .; fi
+COPY package-lock.json .
 RUN npm i
 
 # 构建阶段 - 包含 Go 和 Node 环境
