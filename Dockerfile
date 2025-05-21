@@ -19,6 +19,7 @@ COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
 COPY package.json .
 RUN cp package-lock.json
 RUN npm i
+COPY frontend/ .
 RUN goreact
 
 # 运行时阶段
@@ -28,7 +29,7 @@ WORKDIR /app
 RUN apk add --no-cache libc6-compat gcompat libstdc++
 
 COPY --from=builder /app/myapp .
-COPY --from=builder /app/build /app/build
+COPY --from=node-builder /app/build /app/build
 COPY *.yaml /app/
 COPY locales /app/locales
 
