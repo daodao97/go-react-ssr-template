@@ -16,8 +16,7 @@ RUN go install github.com/daodao97/goreact/cmd/goreact
 FROM node:latest AS node-builder
 WORKDIR /app
 COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
-COPY package.json .
-RUN cp package-lock.json
+COPY package.json package-lock.json .
 RUN npm i
 COPY frontend/ .
 RUN goreact
