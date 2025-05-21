@@ -1,10 +1,16 @@
-FROM golang:1.24 AS builder
+FROM node:24 AS builder
 WORKDIR /app
 
-# 安装 git 和 nodejs
+# 安装 git 和 golang
 RUN apt-get update && apt-get install -y git curl
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y golang-go
+
+# 确认 Go 安装成功
+RUN go version
+
+# 设置 GOPATH
+ENV GOPATH=/go
+ENV PATH=$PATH:$GOPATH/bin
 
 COPY package.json .
 COPY package-lock.json .
