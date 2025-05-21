@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 node:latest AS node-builder
+FROM node:latest AS node-builder
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json .
