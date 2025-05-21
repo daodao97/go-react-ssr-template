@@ -3,6 +3,7 @@ package conf
 import (
 	"github.com/daodao97/goreact/base/login"
 	core_conf "github.com/daodao97/goreact/conf"
+	"github.com/daodao97/goreact/util/mail"
 	"github.com/daodao97/xgo/xapp"
 	"github.com/daodao97/xgo/xdb"
 	"github.com/daodao97/xgo/xlog"
@@ -38,8 +39,16 @@ func Init() error {
 
 	xlog.Debug("GitTag", xlog.Any("GitTag", GitTag))
 
-	login.SetMailSender(login.NewSendGridMailSender(ConfInstance.SendGrid.APIKey, "noreply@go-react-ssr.com"))
+	sender := mail.NewSendGridMailSender(ConfInstance.SendGrid.APIKey)
 
+	mail.SetMailSender(sender)
+
+	login.SetVerificationCodeMailSender(&login.CodeSender{
+		MailSender:       sender,
+		From:             "noreply@shipnow.com",
+		Subject:          "ShipNow - 注册验证码",
+		PlainTextContent: "您好，邮箱验证码为: %s\n验证码10分钟有效期。如非本人操作，请忽略本邮件",
+	})
 	core_conf.SetConf(&ConfInstance.Conf)
 
 	return nil

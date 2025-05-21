@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log/slog"
 	"net/http"
 	"os"
 	"strings"
@@ -12,11 +13,15 @@ import (
 	"github.com/daodao97/goreact/i18n"
 	"github.com/daodao97/goreact/server"
 	"github.com/daodao97/xgo/xapp"
+	"github.com/daodao97/xgo/xlog"
 	"github.com/daodao97/xgo/xredis"
 )
 
 func init() {
 	buildEnvironmentJS("build")
+	if os.Getenv("APP_ENV") != "dev" {
+		xlog.SetLogger(xlog.StdoutJson(xlog.WithLevel(slog.LevelDebug)))
+	}
 }
 
 func main() {
