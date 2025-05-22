@@ -20,6 +20,12 @@ github.com/cloudwego/base64x v0.1.5/go.mod h1:0zlkT4Wn5C6NdauXdJRhSKRlJvmclQ1hhJ
 github.com/cloudwego/iasm v0.2.0/go.mod h1:8rXZaNYT2n95jn+zTI1sDr+IgcD2GVs0nlbbQPiEFhY=
 github.com/daodao97/goreact v0.0.0-20250522003520-420c1598c9f3 h1:Ln1PN2qXBNkokOljTMDVkx5p0sKQJgWIHQDEWUXnOZc=
 github.com/daodao97/goreact v0.0.0-20250522003520-420c1598c9f3/go.mod h1:WmpimtZeoxw51gfkBlpY5/qMdbyhRrQcFcJ+RW/9NQ0=
+github.com/daodao97/goreact v0.0.0-20250522085354-bbec5bacf635 h1:Vzl9VRYp5xvvdyTad6Uu+TfLVloT/LbSxPjhR9akASI=
+github.com/daodao97/goreact v0.0.0-20250522085354-bbec5bacf635/go.mod h1:WmpimtZeoxw51gfkBlpY5/qMdbyhRrQcFcJ+RW/9NQ0=
+github.com/daodao97/goreact v0.0.0-20250522090907-7e18846f49cb h1:s7BYCFNpph0qRxEY30Sgk/k3IdBJUsy75iDn4HBKO1o=
+github.com/daodao97/goreact v0.0.0-20250522090907-7e18846f49cb/go.mod h1:WmpimtZeoxw51gfkBlpY5/qMdbyhRrQcFcJ+RW/9NQ0=
+github.com/daodao97/goreact v0.0.0-20250522091948-c58103dbaa3a h1:FiJc7+xAmTlLhfebu0SvUeCDSEqGssdc5wd97nbl5S0=
+github.com/daodao97/goreact v0.0.0-20250522091948-c58103dbaa3a/go.mod h1:WmpimtZeoxw51gfkBlpY5/qMdbyhRrQcFcJ+RW/9NQ0=
 github.com/daodao97/xgo v0.0.0-20250416024806-6ca66c31dfd6 h1:V752D5iqA9/Mid9r4hBt7yEHh3YvyW2jEAZjeo2gt+U=
 github.com/daodao97/xgo v0.0.0-20250416024806-6ca66c31dfd6/go.mod h1:9cE4/+IgW4AJ4QOlL9FWhUC7W4XOU9BwGM1M00b9sgc=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
