@@ -3,7 +3,7 @@ module shipnow
 go 1.24.0
 
 require (
-	github.com/daodao97/goreact v0.0.0-20250522091948-c58103dbaa3a
+	github.com/daodao97/goreact v0.0.0-20250522094223-1e637e8cc26a
 	github.com/daodao97/xgo v0.0.0-20250416024806-6ca66c31dfd6
 	github.com/gin-contrib/gzip v1.2.2
 	github.com/gin-gonic/gin v1.10.0
