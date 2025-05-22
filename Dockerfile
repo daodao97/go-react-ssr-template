@@ -13,12 +13,10 @@ RUN GIT_TAG=$(git describe --tags --always) \
 
 RUN go install github.com/daodao97/goreact/cmd/goreact
 
-# 使用基于debian的node镜像而不是latest，以确保兼容性
 FROM node:latest AS node-builder
 WORKDIR /app
 COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
 COPY package.json ./
-# 确保安装所有依赖，包括可选依赖
 RUN npm i --legacy-peer-deps --registry=https://registry.npmmirror.com --include=optional
 COPY frontend ./frontend
 COPY tailwind.config.js ./
@@ -26,7 +24,6 @@ COPY postcss.config.js ./
 
 RUN goreact
 
-# 运行时阶段
 FROM alpine:latest
 WORKDIR /app
 
