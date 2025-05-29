@@ -2,7 +2,6 @@
 	"name": "gossr",
 	"dependencies": {
 		"@ridemountainpig/svgl-react": "^1.0.4",
-		"goreact": "git+https://github.com/daodao97/goreact.git",
 		"react-toastify": "^11.0.5"
 	},
 	"devDependencies": {

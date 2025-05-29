@@ -1,5 +1,5 @@
 import React from 'react';
-import { t } from '#/lib/i18n';
+import { t } from '@/core/lib/i18n';
 
 export function NotFound() {
     return (

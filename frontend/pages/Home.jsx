@@ -1,9 +1,9 @@
 import React from "react";
-import Faq from "#/blocks/faq/Faq";
-import Hero from "#/blocks/hero/Hero";
-import { getTranslations } from "#/lib/i18n";
-import Feature3 from '#/blocks/feature/Feature3';
-import { FeatureLayout } from '#/blocks/feature/FeatureLayout';
+import Faq from "@/core/blocks/faq/Faq";
+import Hero from "@/core/blocks/hero/Hero";
+import { getTranslations } from "@/core/lib/i18n";
+import Feature3 from '@/core/blocks/feature/Feature3';
+import { FeatureLayout } from '@/core/blocks/feature/FeatureLayout';
 
 export function Home() {
 	const faqs = getTranslations("home.faq", {})
