@@ -17,7 +17,7 @@ FROM node:latest AS node-builder
 WORKDIR /app
 COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
 COPY package.json ./
-RUN npm i --legacy-peer-deps --registry=https://registry.npmmirror.com --include=optional
+RUN npm i --registry=https://registry.npmmirror.com
 COPY frontend ./frontend
 COPY tailwind.config.js ./
 COPY postcss.config.js ./
