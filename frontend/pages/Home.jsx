@@ -16,6 +16,8 @@ export function Home() {
 			</Hero>
 
 			<FeatureLayout>
+			<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112977453911469&bvid=BV1wbpZeSEPK&cid=500001652782644&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 				{features.map((feature, index) => (
 					<Feature3
 						key={index}
