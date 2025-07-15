@@ -1,0 +1,16 @@
+services:
+  shipnow:
+    build:
+      context: .
+    environment:
+      - APP_ENV=prod
+      - REDIS_0_ADDR=redis:6379
+    restart: unless-stopped
+    ports:
+      - 4001:4001
+    command: --bind 0.0.0.0:4001
+    volumes:
+      - ./tmp/:/tmp/
+  redis:
+    image: redis:latest
+    restart: unless-stopped

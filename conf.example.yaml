@@ -1,0 +1,18 @@
+database:
+  - name: default
+    driver: mysql
+    dsn: root:123456@tcp(127.0.0.1:3306)/go-react-ssr?charset=utf8mb4&parseTime=True&loc=Local
+redis:
+  - name: default
+    addr: 127.0.0.1:6379
+
+sendgrid:
+  api_key: xxxxxxx
+
+core:
+  app_id: go-react-ssr 
+  jwt_secret: 000000
+
+  website:
+    auth_provider:
+      - provider: mail
