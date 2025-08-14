@@ -11,6 +11,8 @@ services:
     command: --bind 0.0.0.0:4001
     volumes:
       - ./tmp/:/tmp/
+    depends_on:
+      - redis
   redis:
     image: redis:latest
     restart: unless-stopped
