@@ -13,8 +13,9 @@ RUN GIT_TAG=$(git describe --tags --always) \
 
 RUN go install github.com/daodao97/goreact/cmd/goreact
 
-FROM node:latest AS node-builder
+FROM ubuntu:24.04 AS node-builder
 WORKDIR /app
+RUN apt-get update && apt-get install -y nodejs npm
 COPY --from=builder /go/bin/goreact /usr/local/bin/goreact
 COPY package.json ./
 RUN npm i --registry=https://registry.npmmirror.com
