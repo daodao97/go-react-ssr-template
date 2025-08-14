@@ -24,11 +24,16 @@ RUN GIT_TAG=$(git describe --tags --always) \
 FROM alpine:latest
 WORKDIR /app
 
-RUN apk add --no-cache libc6-compat gcompat libstdc++
+RUN apk update && \
+    apk add --no-cache libc6-compat gcompat libstdc++ tzdata && \
+    rm -rf /var/cache/apk/*
 
 COPY --from=builder /app/myapp .
 COPY --from=builder /app/build /app/build
 COPY *.yaml /app/
 COPY locales /app/locales
+
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 ENTRYPOINT ["./myapp"]
